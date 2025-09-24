@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-img{
+    width: 650px;
+    height: 450px;
+    position: relative;
+    overflow: hidden;
+}
+
+.antes, .depois{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    position: absolute;
+}
+
+.depois{
+    left: 100%;
+    transition: left 2s;
+}
+
+.box-img:hover .depois{
+    left: 0%;
+}
